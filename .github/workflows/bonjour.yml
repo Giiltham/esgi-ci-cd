@@ -10,6 +10,5 @@ jobs:
       - run: |
           sudo apt-get update
           sudo apt-get install --yes cowsay
-      - run: cat README.md | cowsay
       - run: ls -l # Liste les fichier du répertoire courant
       - run: cat README.md | cowsay dans GitPod # pipe le contenu du fichier `README.md` dans cowsay
