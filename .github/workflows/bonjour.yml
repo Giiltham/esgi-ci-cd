@@ -10,6 +10,6 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.1
         with: 
-          node_version: 19         
+          node-version: 19         
       - run: npm install
       - run: npm run lint
