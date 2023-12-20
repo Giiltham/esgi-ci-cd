@@ -7,8 +7,5 @@ jobs:
     steps:
       - name : "Check out repository code"
         uses: actions/checkout@v4.1.1        
-      - run: |
-          sudo apt-get update
-          sudo apt-get install --yes cowsay
-      - run: ls -l # Liste les fichier du répertoire courant
-      - run: cat README.md | cowsay dans GitPod # pipe le contenu du fichier `README.md` dans cowsay
+      - run: npm install
+      - run: npm run lint
